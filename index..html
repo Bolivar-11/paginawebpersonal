@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina web</title>
+</head>
+<body>
+     <!-- Encabezado principal con nombre y lema -->
+  <header>
+    <h1>Bolivar Mora</h1>
+    <p>Desarrollador Web | Apasionado por la tecnología</p>
+    <img src="foto.jpg" alt="foto de Bolivar Mora">
+  </header>
+
+  <!-- Menú de navegación interno -->
+  <nav>
+    <ul>
+      <li><a href="#sobremi">Sobre mí</a></li>
+      <li><a href="#intereses">Intereses</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#presentacion">Presentación</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+ <!-- Sección "Sobre mí" -->
+  <section id="sobremi">
+    <h2>Sobre mí</h2>
+    <p>Soy <strong>Bolivar Mora</strong>, un <em>estudiante aprendiendo a desarrollar paginas  web</em>. Me apasiona el <mark>diseño</mark> y la <mark>programación</mark> orientada a soluciones reales.</p>
+  </section>
+
+  <!-- Lista de intereses o logros -->
+  <section id="intereses">
+    <h2>Mis Intereses</h2>
+    <ul>
+      <li>Desarrollo Web</li>
+      <li>Aprendizaje constante</li>
+      <li>Diseño gráfico</li>
+      <li>Videojuegos</li>
+    </ul>
+  </section>
+   <!-- Tabla de habilidades -->
+  <section id="habilidades">
+    <h2>Tabla de Habilidades</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Habilidad</th>
+          <th>Nivel</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5</td>
+          <td>Medio</td>
+        </tr>
+        <tr>
+          <td>CSS3</td>
+          <td>Intermedio</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Básico</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Siempre aprendiendo más...</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <!-- Multimedia: audio de presentación -->
+      <section id="presentacion">
+      <p><strong>4. Audio de mi presentación:</strong></p>
+      <audio src="audio.mp3.ogg" controls>
+      Tu navegador no soporta el audio.
+     </audio>
+    </section>
+    <!-- Formulario de contacto -->
+<section id="contacto">
+  <h2>Formulario de Contacto</h2>
+  <form>
+    <!-- Campo Nombre -->
+    <fieldset>
+      <legend>Datos Personales</legend>
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" placeholder="tucorreo@email.com" required>
+
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" min="10" max="120" placeholder="Ej. 18" required>
+
+      <label>Género:</label>
+      <label><input type="radio" name="genero" value="masculino" required> Masculino</label>
+      <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+      <label><input type="radio" name="genero" value="otro"> Otro</label>
+    </fieldset>
+
+    <!-- Campo Intereses -->
+    <fieldset>
+      <legend>Preferencias</legend>
+
+      <label for="intereses">Intereses:</label>
+      <select id="intereses" name="intereses" required>
+        <option value="">-- Selecciona uno --</option>
+        <option value="programacion">Programación</option>
+        <option value="diseño">Diseño</option>
+        <option value="musica">Música</option>
+      </select>
+
+      <label for="comentarios">Comentarios adicionales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí..." required></textarea>
+    </fieldset>
+
+    <!-- Botones -->
+    <div style="margin-top: 15px;">
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </div>
+  </form>
+</section>
+ <!-- Pie de página con derechos y redes sociales -->
+  <footer>
+    <p>© 2025 Bolivar Mora. Todos los derechos reservados.</p>
+    <p>Sígueme en:
+      <a href="https://twitter.com">Twitter</a> |
+      <a href="https://linkedin.com">LinkedIn</a> |
+      <a href="https://github.com">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
